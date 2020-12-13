@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    color: #eeeeee;
+    color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     height: 100%;
     line-height: 1.5;
@@ -326,7 +326,6 @@ body {
 
 .form-control input:focus,
 .form-control textarea:focus {
-    font-size: 18px;
     outline: 2px solid #ffd369;
 }
 
@@ -360,6 +359,11 @@ body {
     border: 1px solid #393e46;
     color: #393e46;
     font-family: inherit;
+}
+
+.contact-form input:focus-within,
+.contact-form textarea:focus-within {
+    background-color: #ffd369;
 }
 
 .contact-img {
