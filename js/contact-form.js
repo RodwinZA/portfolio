@@ -1,10 +1,10 @@
 const form = document.querySelector("#form");
-const name = document.querySelector("#name");
+const yourName = document.querySelector("#name");
 const email = document.querySelector("#email");
 const textMessage = document.querySelector("#message");
 
 form.addEventListener("submit", e => {
-    e.preventDefault();
+    // e.preventDefault();
     
     checkInputs();
 });
@@ -16,9 +16,9 @@ function checkInputs(){
     const textMessageValue = textMessage.value.trim();
 
     if (nameValue === ""){
-        setErrorFor(name, "Oops. You forgot to enter your name.");
+        setErrorFor(yourName, "Oops. You forgot to enter your name.");
     } else {
-        setSuccessFor(name);
+        setSuccessFor(yourName);
     }
 
     if (emailValue === ""){
